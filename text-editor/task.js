@@ -5,5 +5,5 @@ document.addEventListener(`keyup`, () => {
 })
 
 window.addEventListener(`load`, () => {
-  imputText.value = localStorage.lastText;
+  imputText.value = localStorage.getItem(`lastText`);
 })

@@ -11,6 +11,7 @@ form.addEventListener(`submit`, event => {
     if (xhr.response.success) {
       localStorage.setItem(`userId`, xhr.response.user_id);
       showWelcome();
+      form.reset();
     } else {
       alert(`Неверный логин/пароль`);
     }
